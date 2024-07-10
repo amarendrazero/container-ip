@@ -21,3 +21,4 @@ EXPOSE 80
 
 # Run the script to collect IP address before starting Apache
 CMD ["/bin/bash", "-c", "/usr/local/bin/collect_ip.sh && httpd-foreground"]
+
