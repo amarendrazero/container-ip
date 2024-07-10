@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Container IP Address</title>
+</head>
+<body>
+    <h1>Container IP Address</h1>
+    <p>The IP address of this container is: <b id="ip-address">Loading...</b></p>
+    <script>
+        fetch('/ip').then(response => response.text()).then(data => {
+            document.getElementById('ip-address').innerText = data;
+        });
+    </script>
+</body>
+</html>
